@@ -1,0 +1,17 @@
+{	
+	"_comment": "Format of Certificate Signing Request (CSR) https://www.globalsign.com/en/blog/what-is-a-certificate-signing-request-csr/",
+	"CN": "admin",
+	"key": {
+		"algo": "rsa",
+		"size": 2048
+	},
+	"names": [
+		{
+			"C": "US",
+			"L": "Sunnyvale",
+			"O": "system:masters",
+			"OU": "k8s-cluster",
+			"ST": "California"
+		}
+	]
+}
