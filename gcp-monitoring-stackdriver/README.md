@@ -13,6 +13,9 @@ https://cloud.google.com/monitoring
 
 you can create a 'Monitoring' workspace in your GCP by navigating to 'Navigation menu > Monitoring' in the Google Cloud Platform Console
 
+![picture](https://github.com/shreyansvm/google-cloud-platform-build-k8s-cluster/blob/master/gcp-monitoring-stackdriver/Screen%20Shot%202020-05-02%20at%202.12.37%20PM.png)
+![picture](https://github.com/shreyansvm/google-cloud-platform-build-k8s-cluster/blob/master/gcp-monitoring-stackdriver/Screen%20Shot%202020-05-02%20at%202.13.46%20PM.png)
+![picture](https://github.com/shreyansvm/google-cloud-platform-build-k8s-cluster/blob/master/gcp-monitoring-stackdriver/Screen%20Shot%202020-05-02%20at%202.14.18%20PM.png)
 
 SSH into your VM's instance and execute this command to create a CPU load. This Linux pipeline forces the CPU to work on compressing a continuous stream of random data.
 ```
@@ -47,8 +50,9 @@ sudo bash install-logging-agent.sh
 Once both of the agents have been installed on your project's VM, click Metrics Explorer under the main Cloud Monitoring menu on the far left.
 
 In the Metric pane of Metrics Explorer, select the resource type GCE VM instance and the metric CPU usage.
-
 In the resulting graph, notice that CPU usage increased sharply a few minutes ago.
+
+![picture](https://github.com/shreyansvm/google-cloud-platform-build-k8s-cluster/blob/master/gcp-monitoring-stackdriver/Screen%20Shot%202020-05-02%20at%202.16.04%20PM.png)
 
 Terminate your workload generator. Return to your ssh session on my-vm and enter this command:
 ```
